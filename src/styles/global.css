@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply bg-black text-white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+cards {
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btc,
+.cosmos,
+.ethereum {
+    display: grid;
+    max-width: 300px;
+    min-width: 250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, 60px) 1fr;
+    grid-template: 
+        "info"
+        "chart";
+    border-radius: 30px;
+}
+
+.btc {
+    box-shadow: 10px 10px 20px 1px rgba(247,147,26,.15);
+}
+
+.cosmos {
+    box-shadow: 10px 10px 20px 1px rgba(46,49,72,.15);
+}
+
+.ethereum {
+    box-shadow: 10px 10px 20px 1px rgba(78,56,216,.15);
+}
+
+.asset-info {
+    grid-area: info;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.title {
+    display: inline-flex;
+}
+
+card h1 {
+    margin-left: 10px;
+}
+
+
+#btcChart,
+#cosmosChart,
+#ethereumChart {
+    grid-area: chart;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: auto;
+}

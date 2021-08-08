@@ -1,0 +1,37 @@
+{
+    "name": "template",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next",
+        "start": "next start",
+        "build": "next build"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.2.6",
+        "next": "^10.0.6",
+        "postcss": "^8.2.6",
+        "react": "^17.0.1",
+        "react-countdown-hook": "^1.1.0",
+        "react-dom": "^17.0.1",
+        "react-typed": "^1.2.0",
+        "request": "^2.88.2",
+        "swr": "^0.5.6",
+        "tailwindcss": "^2.0.3",
+        "use-debounce": "^7.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.28",
+        "@types/react": "^17.0.2",
+        "@typescript-eslint/eslint-plugin": "^4.15.0",
+        "@typescript-eslint/parser": "^4.15.0",
+        "eslint": "^7.20.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "typescript": "^4.1.5"
+    }
+}
