@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Chart from 'chart.js';
+import Table from '../components/Table';
+import Price from '../components/Price';
 
 export default function IndexPage() {
 
@@ -401,6 +403,10 @@ printCosmosChart()
           </cards>
         </container>
       </div>
+
+      <Price />
+
+      <Table />
 
       <div>
         <p className="opacity-50 text-center">
